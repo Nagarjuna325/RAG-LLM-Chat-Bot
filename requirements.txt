@@ -1,0 +1,9 @@
+ipykernel
+langchain
+python-dotenv
+langchain-openai
+langchain_community
+faiss-cpu
+streamlit
+langchain_groq
+transformers
