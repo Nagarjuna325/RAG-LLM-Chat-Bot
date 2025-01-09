@@ -1,4 +1,5 @@
 ipykernel
+pypdf
 langchain
 python-dotenv
 langchain-openai
