@@ -270,7 +270,7 @@ status_placeholder = st.empty()
 
 # Input for user query
 user_prompt = st.text_input(
-    "Enter your query from the research paper", 
+    "Enter your query ", 
     key="user_prompt", 
     value=st.session_state.get("user_prompt", ""),
     help="Type your question about the research papers here"
