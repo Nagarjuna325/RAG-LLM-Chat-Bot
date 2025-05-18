@@ -75,7 +75,7 @@ st.title("RAG Document Q&A With Groq And Lama3")
 
 user_prompt=st.text_input("Enter your query from the research paper")
 
-if st.button("Document Embedding"):
+if st.button("Submit"):
     create_vector_embedding()
     st.write("Vector Database is ready")
 
@@ -83,7 +83,7 @@ import time
 
 if user_prompt:
     if "vectors" not in st.session_state or st.session_state.vectors is None:
-        st.warning("Please create the vector database first by clicking on 'Document Embedding'.")
+        st.warning("Please create the vector database first by clicking on 'Submit'.")
     else:
         # creates a llm 
         document_chain=create_stuff_documents_chain(llm,prompt)
