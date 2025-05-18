@@ -73,11 +73,22 @@ def create_vector_embedding():
 
 st.title("RAG Document Q&A With Groq And Lama3")
 
-user_prompt=st.text_input("Enter your query from the research paper")
+user_prompt=st.text_input("Enter your query from the research paper", key="user_prompt")
 
-if st.button("Submit"):
-    create_vector_embedding()
-    st.write("Vector Database is ready")
+# if st.button("Submit"):
+#     create_vector_embedding()
+#     st.write("Vector Database is ready")
+# Create two columns for Submit and Clear buttons
+col1, spacer, col2 = st.columns([1, 6, 1])
+
+with col1:
+    if st.button("Submit"):
+        create_vector_embedding()
+        st.write("Vector Database is ready")
+
+with col2:
+    if st.button("Clear"):
+        st.session_state["user_prompt"] = ""  # Clear the prompt
 
 import time
 
