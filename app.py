@@ -273,7 +273,7 @@ user_prompt = st.text_input(
     "Enter your query ", 
     key="user_prompt", 
     value=st.session_state.get("user_prompt", ""),
-    help="Type your question about the research papers here"
+    help="Type your question here"
 )
 
 # Button layout
