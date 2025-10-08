@@ -225,7 +225,7 @@ def query_documents(user_prompt):
         try:
             llm = ChatGroq(
                 groq_api_key=groq_api_key, 
-                model_name="Llama3-8b-8192",
+                model_name="Llama-3.1-8b-instant",
                 temperature=0.2,  # Lower temperature for more factual responses
                 max_tokens=1024,  # Setting a reasonable max token limit
                 timeout=60  # Add timeout to prevent hanging
