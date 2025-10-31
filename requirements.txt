@@ -8,3 +8,5 @@ faiss-cpu
 streamlit
 langchain_groq
 transformers
+langchain_text_splitters
+langchain_classic
